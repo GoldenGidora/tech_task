@@ -1,0 +1,23 @@
+.slider__button-prev, .slider__button-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.slider__button-next {
+    right: 0;
+}
+.slider__button-prev {
+    left: 0;
+}
+
+.slider__button-prev:hover, .slider__button-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
