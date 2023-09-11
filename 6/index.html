@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<form class="form">
+    <div class="title">Form</div>
+    <label class="input-container">
+        <input
+                id="name"
+                minlength="3"
+                maxlength="30"
+                pattern="[a-zA-Zа-яА-Я]+"
+                class="input"
+                type="text"
+                placeholder="Имя"
+                required
+        />
+    </label>
+    <label class="input-container">
+        <input
+                id="phone"
+                class="input"
+                type="text"
+                placeholder="Телефон"
+                minlength="10"
+                maxlength="15"
+                pattern="[+]?[0-9]+"
+                required
+        />
+    </label>
+    <label class="input-container">
+        <input
+                id="password"
+                class="input"
+                type="password"
+                placeholder="Пароль"
+                minlength="8"
+                maxlength="40"
+                pattern="^(?=.*[A-Z])(?=.*\d).+$"
+                required
+        />
+    </label>
+    <label class="input-container">
+        <input
+                id="confirm-password"
+                class="input"
+                type="password"
+                placeholder="Повторите пароль"
+                required
+        />
+    </label>
+    <button class="submit">submit</button>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
