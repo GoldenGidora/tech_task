@@ -1,0 +1,10 @@
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #5865F2;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
