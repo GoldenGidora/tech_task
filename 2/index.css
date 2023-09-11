@@ -1,0 +1,76 @@
+.shape {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin: 20px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: green;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    background-color: yellow;
+}
+
+.pulse-animation {
+    animation: pulse 1s infinite;
+}
+
+.move-animation {
+    animation: move 2s infinite;
+}
+
+.rotate-animation {
+    animation: rotate 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
